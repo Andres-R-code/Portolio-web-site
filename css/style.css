@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: rgba(29, 28, 28, 0.945);
+}
+
+
+header {
+    margin: 0% 1% 0% 1%;
+    box-shadow: rgba(230, 221, 221, 0.644) -0.7px 2px 2px 2px;
+    overflow: hidden;
+    background: rgba(44, 40, 40, 0.589);
+    background-image: url('https://media.giphy.com/media/2kWWJNqez9Od7Yw6PE/giphy.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 
+------------------------ Zoom Effect ------------------
+*/
+
+.zoom {
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+
+/* 
+------------------------ Helpers ------------------
+*/
+
+.titles {
+    margin: 0% 1% 0% 1%;
+    background: rgba(31, 32, 30, 0.904);
+    box-shadow: rgba(230, 221, 221, 0.644) 2px 2px 2px;
+    text-align: center;
+    color: white;
+    border: solid rgba(196, 187, 187, 0.39);
+    text-shadow: 2px 2px 2px  rgba(190, 231, 95, 0.445);
+    padding: 2%;
+}
+
+.titles h2{
+    text-shadow: 2px 2px 2px  rgba(190, 231, 95, 0.445);
+}
+
+.container-style {
+    margin: 0% 1% 0% 1%;
+    border: solid rgba(196, 187, 187, 0.39);
+    box-shadow: -0.7px 3px 3px 3px rgba(230, 221, 221, 0.356);
+    
+}
+
+.card-style {
+
+    border-radius: 1%;
+    box-shadow: 2px 2px 2px rgba(233, 236, 231, 0.678);
+
+}
+
+
+.desing {
+    color: white;
+    background:  rgba(121, 115, 115, 0.178);
+    box-shadow: 2px 2px 2px  rgba(190, 231, 95, 0.445);
+    text-shadow: 2px 2px 2px  rgb(36, 34, 34);
+    text-decoration: none;
+    padding-right: 7px;
+}
+
+
+/* 
+== Navegation ================================================================================================================================
+ */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul.hide {
+    display: none;
+}
+
+.nav div.hides {
+    display: none;
+}
+
+.hamburger-icon {
+    margin-left: 15px;
+    color: white;
+    font-size: 27px;
+    text-shadow: 3px 2px 2px  rgba(15, 15, 15, 0.856);
+    animation: mymove 2s infinite;
+}
+
+.home-icon {
+    color: white;
+    margin: 2%;
+    font-size: 27px;
+    text-shadow: 3px 2px 2px  rgba(15, 15, 15, 0.856);
+    animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        color:  rgba(150, 158, 149, 0.486);
+    }
+}
+
+
+/* Menus's */
+
+.nav-rigth {
+    display: flex;
+    margin-right: 3%;
+    margin-top: 2%
+}
+
+.nav-rigth a {
+    padding: 3px;
+}
+
+#menu {
+    background: rgba(43, 46, 40, 0.897);
+    border-radius: 2%;
+    position: fixed;
+    top: 7%;
+    left: 5%;
+}
+
+#menu li {
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+/* Principal Content */
+
+.title-header {
+    color: white;
+    font-size: 23px;
+    font-weight:bold;
+    text-shadow: 2px 2px 2px  rgb(36, 34, 34);
+    margin-top: 3%;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Row Social */
+
+.row-social {
+    text-align: center;
+}
+
+.row-social div {
+    margin-top: 5%;
+}
+
+
+.social-icon a {
+    color: white;
+    background:  rgba(121, 115, 115, 0.116);
+    border-radius: 60%;
+    font-size: 22px;
+    margin-right: 5%;
+    padding: 3px 7px;
+    box-shadow: 2px 2px 2px  rgba(190, 231, 95, 0.445);
+    text-shadow: 2px 2px 2px  rgba(121, 115, 115, 0.842);
+}
+
+
+.butoon-cv a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px  rgba(190, 231, 95, 0.445);
+    border-radius: 10%;
+    text-shadow: 2px 2px 2px  rgba(121, 115, 115, 0.842);
+}
+
+/* 
+== Question - texts ================================================================================================================================
+ */
+
+.question-text {
+    color: white;
+    font-size: 93%;
+    text-shadow: 2px 2px 2px  rgb(36, 34, 34);
+    margin-bottom: 2%;
+}
+
+.email-link {
+    text-decoration: none;
+    color: rgba(207, 243, 140, 0.37)
+}
+
+/* Angle */
+
+.angle-down {
+    background: rgba(80, 78, 78, 0.082);
+    position: relative;
+    text-align: center;
+    margin-left: 6%;
+    animation-name: move-angle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.angle-down i {
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 20px;
+}
+
+@keyframes move-angle {
+    0%   {top:0px;}
+    25%  {top:22px;}
+}
+
+/* 
+== About ================================================================================================================================
+ */
+
+
+.d-about {
+    display: flex;
+    justify-content: center;
+    background-image: url('https://images.pexels.com/photos/2884864/pexels-photo-2884864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.photo{
+    margin-top: 20%;
+    margin-left: 20%;
+    width: 60%;
+}
+
+.dates-personal {
+    line-height: 1.9;
+    font-size: 69%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 5%;
+    overflow: hidden;
+    text-shadow: 2px 2px 2px  rgba(231, 233, 229, 0.87);
+}
+
+/* 
+====== Skills =====================================================================================
+*/
+
+.d-box-lenguaje {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.gif-skills {
+    background-image: url('https://media.giphy.com/media/l2Sq6vcU6lh7uecmI/giphy.gif');
+    background-size: 50%;
+    background-position: center;
+}
+
+
+.style-icon-l {
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.226);
+    background-position: center;
+    box-shadow: 2px 2px 2px rgba(245, 239, 239, 0.582);
+    background-size: 100% 100%;
+    min-width: 100px;
+    min-height: 150px;
+    margin: 3%;
+    border-radius: 2%;
+}
+
+
+.html {
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/1051/1051277.svg');
+}
+
+.css {
+
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/732/732190.svg');
+}
+
+.js {
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/1199/1199124.svg');
+}
+
+.react {
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/919/919851.svg');
+}
+
+.php {
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/528/528261.svg');
+}
+
+.python {
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/1822/1822899.svg');
+}
+
+.sql {
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/2772/2772128.svg');
+}
+
+.mongo {
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/919/919854.svg');
+}
+
+
+/* 
+====== My Services ========================================================================================================
+*/
+
+
+
+.d-box-services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url('https://media.giphy.com/media/xThuWemKXhLNfhUdeU/giphy.gif');
+    background-size: 50%;
+    background-position: center;
+}
+
+
+.style-icon-s {
+    background-color: rgba(0, 0, 0, 0.226);
+    background-position: center;
+    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgba(245, 239, 239, 0.836);
+    background-size: 100% 100%;
+    min-width: 150px;
+    min-height: 150px;
+    margin: 3%;
+    border-radius: 2%;
+}
+
+.size-text {
+    padding: 3%;
+    font-size: 100%;
+}
+
+.web {
+    
+    background-image: url('https://image.freepik.com/psd-gratis/mock-up-portatil-vista-frontal_1310-198.jpg');
+}
+
+.apis {
+
+    background-image: url('https://image.freepik.com/foto-gratis/tecnologia-informatica-nube-almacenamiento-datos-linea-concepto-red-empresarial_31965-6615.jpg');
+}
+
+.movil {
+    background-image: url('https://image.freepik.com/foto-gratis/primer-plano-mano-hombre-utilizando-su-telefono-movil_1134-53.jpg');
+}
+
+/* 
+====== Portfolio ========================================================================================================
+*/
+
+
+.d-box-portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url('https://media.giphy.com/media/l2R0aUFFfV8OIo4nu/giphy.gif');
+    background-size: 80%;
+    background-position: center;
+}
+
+
+.style-icon-p {
+    
+    background-color: rgba(0, 0, 0, 0.226);
+    background-position: center;
+    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgba(245, 239, 239, 0.582);
+    background-size: 100% 100%;
+    background-position: center;
+    min-width: 150px;
+    min-height: 150px;
+    margin: 3%;
+    overflow: hidden;
+    border-radius: 2%;
+}
+
+.pag-one {
+
+    background-image: url('https://es.webself.net/img/accueil-anim/appareil-bar_es.png');
+}
+
+.pag-two {
+
+    background-image: url('https://www.damos.co/images/facebook.jpg?w=1200');
+}
+
+.pag-tree {
+    background-image: url('https://disenodepaginasweb.com.pe/wp-content/uploads/2018/05/ima02.jpg');
+}
+
+.pag-four {
+    background-image: url('https://es.webself.net/img/accueil-anim/appareil-architecte_es.png');
+}
+
+.pag-five {
+    background-image: url('https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_550,h_357/https://www.arpynet.com/wp-content/uploads/2018/07/desarrollo-web-ciencia-activa.png');
+}
+
+.pag-six {
+    background-image: url('https://www.mlgdiseno.es/wp-content/uploads/2017/05/dise%C3%B1o-de-web-corporativas.jpg');
+}
+
+
+
+/* 
+== Contac ================================================================================================================================
+ */
+
+
+.d-box-git {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url('https://media3.giphy.com/media/3o8doWDjWvHz61qvfy/giphy.gif?cid=ecf05e476c93f214adb4e2dd53ac66ad539b0e5a8b3ed8cc&rid=giphy.gif');
+    background-size: 50%;
+    background-position: center;
+
+}
+
+.img-git {
+    background-image: url('https://www.hd-tecnologia.com/imagenes/articulos/2020/06/Microsoft-remueve-la-palabra-Master-de-Github-ya-que-algunos-la-consideran-racista.jpg');
+    background-size: 115%;
+    background-position: center;
+    text-align: center;
+    padding: 3%;
+    border-radius: 60%;
+}
+
+.click-git {
+    color: black;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.521);
+    text-decoration: none;
+    text-align: center;
+    animation: mymove 2s infinite;
+}
+
+
+
+/* 
+== Footer ================================================================================================================================
+ */
+
+.footer-style {
+    background: black;
+    margin: 0% 1% 0% 1%;
+    border:solid;
+    text-align: center;
+    padding: 4%;
+}
+
+.copy a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 4px 4px 2px  rgba(190, 231, 95, 0.445);
+    animation: mymove 2s infinite;
+}
+
+.d-text-foot {
+    margin: 5%;
+    text-shadow: 4px 4px 2px  rgba(190, 231, 95, 0.445);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
